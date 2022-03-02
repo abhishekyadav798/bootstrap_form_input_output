@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Vertical Form Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <form>
+            <label> input1</label>
+            <input type="text" id="fname1" name="fname"><br>
+            <label> input2</label>
+            <input type="text" id="fname2" name="fname"><br>
+            <label> input3</label>
+            <input type="text" id="fname3" name="fname"><br>
+            <label> input4</label>
+            <input type="text" id="fname4" name="fname"><br>
+            <label> input5</label>
+            <input type="text" id="fname5" name="fname"><br>
+
+        </form>
+        <div>
+            <label> result1</label>
+            <input type="text" id="fname_1" name="fname" disabled><br>
+            <label> result2</label>
+            <input type="text" id="fname_2" name="fname" disabled><br>
+            <label> result3</label>
+            <input type="text" id="fname_3" name="fname" disabled><br>
+            <label> result4</label>
+            <input type="text" id="fname_4" name="fname" disabled><br>
+            <label> result5</label>
+            <input type="text" id="fname_5" name="fname" disabled><br>
+
+
+        </div>
+
+        <button onclick="onclick_()">click me</button>
+    </div>
+    <script>
+        function onclick_() {
+            // document.getElementById("fname").value
+
+
+            document.getElementById("fname_1").value = document.getElementById("fname1").value
+            document.getElementById("fname_2").value = document.getElementById("fname2").value
+            document.getElementById("fname_3").value = document.getElementById("fname3").value
+            document.getElementById("fname_4").value = document.getElementById("fname4").value
+            document.getElementById("fname_5").value = document.getElementById("fname5").value
+
+        }
+    </script>
+
+    </div>
+</body>
+
+</html>
